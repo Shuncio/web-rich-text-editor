@@ -1,0 +1,65 @@
+       /* The whole toolbar container */
+.toolbar-container{
+    background-color: #7d88ca;
+    height: 95px;
+    width: 790px;
+}
+
+
+
+    /* Container for stylise buttons - bold, underline etc. */
+.stylise-btns-container{
+    height: 32.5px;
+}
+
+
+
+    /* visuals for stylise buttons */
+.btn{
+    background-color: inherit;
+    border: none;
+    margin: 10px 0 0 8px;
+    font-size: 24px; 
+    padding: 5px;
+}
+
+
+
+    /* Container for aligning buttons */
+.align-btns-container{
+    height: 32.5px;
+    text-align: center;
+}
+
+
+
+    /* Aligning buttons */
+.align-btn{
+    background-color: inherit;
+    border: none;
+    margin: 20px 0 0 8px;
+    font-size: 24px;
+    padding: 5px;
+}
+
+
+
+    /* backlight for all buttons */
+.btn:hover, .align-btn:hover{
+    background-color: #747fc9;
+}
+
+
+    /* hiding the import-btn input field */
+.import-btn{
+    display: none;
+}
+
+
+    /* visuals for JSON file buttons */
+.json-btn{
+    left: 170px;
+    margin: 0 0 0 8px;
+    position: relative;
+    text-align: right;
+}

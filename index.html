@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+   
+    <head>
+
+        <title>WYSIWYG Text Editor</title>
+
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta nametag="description" content="Online rich text editor coded in pure JS.">
+        <meta nametag="keywords" content="online text editor, rich text editor, responsive, js text editor, WYSIWYG">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+    
+            <!-- CSS stylesheets -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/toolbar.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+            <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+            <!-- Font Awesome CDN -->
+        <script src="https://kit.fontawesome.com/568211b782.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+
+            <!-- Main container that grabs toolbar and user's content containers -->
+        <div class="whole-container">
+
+                <!-- Toolbar panel - bold, italic, bullet pointing icons  -->
+            <div class="toolbar-container">
+                
+                    <!-- Stylise & functional text buttons - bold, underline etc. -->
+                <div class="stylise-btns-container">
+                        
+                    <button type="button" class="btn" data-element="bold">
+                        <span class="fas fa-bold tooltip" data-descr="Bold"></span>
+                    </button>
+                    
+                    <button type="button" class="btn" data-element="italic">
+                        <span class="fas fa-italic tooltip" data-descr="Italic"></span>
+                    </button>
+
+                    <button type="button" class="btn" data-element="underline">
+                        <span class="fas fa-underline tooltip" data-descr="Underline"></span>
+                    </button>
+
+                    <button type="button" class="btn" data-element="subscript">
+                        <span class="fas fa-subscript tooltip" data-descr="Subscript"></span>
+                    </button>
+
+                    <button type="button" class="btn" data-element="removeFormat">
+                        <span class="fas fa-remove-format tooltip" data-descr="Removes all formating"></span>
+                    </button>
+
+                    <button type="button" class="btn" data-element="insertUnorderedList">
+                        <span class="fas fa-list-ul tooltip" data-descr="Bullet list"></span>
+                    </button>
+
+                    <button type="button" class="btn" data-element="insertOrderedList">
+                        <span class="fas fa-list-ol tooltip" data-descr="Number list"></span>
+                    </button>
+
+                    <button type="button" class="btn" data-element="selectAll">
+                        <span class="fas fa-hand-pointer tooltip" data-descr="Select all text"></span>
+                    </button>
+
+                    <button type="button" class="btn" data-element="delete">
+                        <span class="fas fa-backspace tooltip" data-descr="Delete text"></span>
+                    </button>
+
+                    <button type="button" class="btn" data-element="createLink">
+                        <span class="fas fa-link tooltip" data-descr="Create hyperlink"></span>
+                    </button>
+
+                </div>
+                <!-- End of stylise buttons -->
+
+
+                    <!-- align buttons - allign left, right etc. -->
+                <div class="align-btns-container">
+
+                    <button type="button" class="align-btn" data-element="justifyLeft">
+                        <span class="fas fa-align-left tooltip" data-descr="Align text to the left"></span>
+                    </button>
+
+                    <button type="button" class="align-btn" data-element="justifyCenter">
+                        <span class="fas fa-align-center tooltip" data-descr="Center text"></span>
+                    </button>
+
+                    <button type="button" class="align-btn" data-element="justifyRight">
+                        <span class="fas fa-align-right tooltip" data-descr="Align text to the right"></span>
+                    </button>
+
+                    <button type="button" class="align-btn" data-element="justifyFull">
+                        <span class="fas fa-align-justify tooltip" data-descr="Justify text"></span>
+                    </button>
+
+                    
+                        <!-- Export JSON file button -->
+                    <button type="button" class="btn export-btn json-btn">
+                        <span class="fas fa-file-download tooltip" data-descr="Export JSON file"></span>
+                    </button>
+
+                        <!-- Import JSON file "button" -->
+                    <label class="btn json-btn">
+                        <input type="file" class="import-btn">
+                            <span class="fas fa-file-upload tooltip" data-descr="Import JSON file"></span>
+                        </input>
+                    </label>       
+
+                </div>
+                <!-- End of align buttons -->
+
+            </div>
+            <!-- End of the toolbar panel -->
+
+                
+                <!-- Main editor area - the user can write anything here -->
+            <div class="user-content-container" contenteditable="true"></div>
+            <!-- End of the user's editing area -->    
+
+        </div>
+
+        <script src="js/app.js" charset="utf-8"></script>
+
+    </body>
+
+</html>
